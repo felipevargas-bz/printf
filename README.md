@@ -1,6 +1,6 @@
-<img src='https://github.com/felipevargas-bz/felipevargas-bz/blob/main/banner.png' alt='Banner' width=100%>
+<img src='https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/12/gitHub.png' alt='Banner' width=100%>
 
-- Social media __Andres Vasquez__.. 
+- Social media __Andres Vasquez__..
 
 
 [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg' alt='linkedin' height='40'>](https://www.linkedin.com/in/andres-felipe-vasquez-chica-4b3b81183/)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg' alt='facebook' height='40'>]()  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg' alt='twitter' height='40'>](https://twitter.com/vasketz)
