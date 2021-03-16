@@ -5,6 +5,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <string.h>
+#include <limits.h>
 
 /**
  * print - struct of format to print.
@@ -15,7 +17,7 @@
 typedef struct print
 {
     char *ident;
-    void (*pt_func)(va_list, int *);
+    int (*pt_func)(va_list);
 }for_mt;
 
 /**
@@ -23,17 +25,24 @@ typedef struct print
  * @string: string to print.
  * @count: printed character counter.
  */
-void print_string(va_list string, int *count);
+int print_string(va_list string);
 /**
  * print_char - print a char.
  * @character: character to print.
  * @count: printed character counter.
  */
-void print_char(va_list character, int *count);
+int print_char(va_list character);
 /**
  * _printf - imprime lo que le venga XD.
  * format - format of print.
  * Return: retractor variable int.
  */
 int _printf(const char *format,...);
+
+int print_porcent(va_list argumentos);
+
+int (*get_format_function(const char *identifier))(va_list);
+
+int print_number(va_list integer);
+
 #endif /**HOLBERTON_H*/

@@ -4,30 +4,34 @@
  * @character: character to print.
  * @count: printed character counter.
  */
-void print_char(va_list character, int *count)
+int print_char(va_list character)
 {
     int b = (char)va_arg(character, int);
 
-    write(1, &b, 1);
+    	write(1, &b, 1);
 
-    *count = *count + 1;
+	return (1);
 }
 /**
  * print_string - print a string.
  * @string: string to print.
  * @count: printed character counter.
  */
-void print_string(va_list string, int *count)
+int print_string(va_list string)
 {
-    char *s = va_arg(string, char *);
+	char *str = va_arg(string, char *);
+	int count = strlen(str);
 
-    while (s && *s)
-    {
-        write(1, s++, 1);
+	write(1, str, count);
 
-        if (*s != '\0')
-        {
-            *count = *count + 1;
-        }
-    }
+	return (count);
+}
+
+int print_porcent(va_list argument)
+{
+	(void)argument;
+
+	write(1, "%", 1);
+
+	return (1);
 }
