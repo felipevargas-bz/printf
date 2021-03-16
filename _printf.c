@@ -73,5 +73,5 @@ int _printf(const char *format,...)
 	}
 	va_end(argument_list);
 
-	return (retractor);    
+	return (retractor);
 }
