@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * get_formay_function - Get the format function object
- * 
- * @identifier: identify the caracter format 
+ * get_format_function - Get the format function object
+ *
+ * @identifier: identify the caracter format
  * Return: NULL.
  */
 
@@ -11,14 +11,14 @@ int (*get_format_function(const char *identifier))(va_list)
 {
 	int i = 0;
 
-	for_mt array[] = 
-	{
+	for_mt array[] =	{
 		{"c", print_char},
 		{"s", print_string},
 		{"%", print_porcent},
 		{"i", print_number},
 		{"d", print_number},
-		{NULL, NULL},};
+		{NULL, NULL},
+	};
 
 	while (array[i].ident != NULL)
 	{
@@ -34,13 +34,13 @@ int (*get_format_function(const char *identifier))(va_list)
 
 /**
  * _printf - principal function of printf
- * 
- * @format: a pointer to get all the caracters trough input 
- * ... - all agurments passed trough variadic function 
+ *
+ * @format: a pointer to get all the caracters trough input
+ * ... - all agurments passed trough variadic function
  * Return: number of caracters.
  */
 
-int _printf(const char *format,...)
+int _printf(const char *format, ...)
 {
 	int retractor = 0;
 	int (*pt_func)(va_list);
