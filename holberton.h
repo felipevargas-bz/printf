@@ -7,6 +7,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <limits.h>
+#define TRUE 1
 
 /**
  * struct print - struct of function pointer
@@ -41,16 +42,15 @@ int print_char(va_list character);
 int _printf(const char *format, ...);
 /**
  * print_porcent - prints porcent function
- * @argumentos: name of the items passed
+ * @argument: name of the items passed
  * Return: size of string.
  */
-int print_porcent(va_list argumentos);
+int print_porcent(va_list argument);
 /**
  * print_number - prints decimal numbers
  * @integer: name of the items in the va_list
  * Return: size of int
  */
 int print_number(va_list integer);
-
 int (*get_format_function(const char *identifier))(va_list);
 #endif /**HOLBERTON_H*/
