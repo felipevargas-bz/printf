@@ -3,18 +3,10 @@
 ## printf
 
 ### _printf
- simple re-creation of the printf function
-To use this function the #include "holberton.h" header is needed.
-The _printf() function produces output according to a format which is described
+ _espacio para descripción_
 
 ```
-To use _printf you have to use the following key characters preceeded by % symbol.
-%c: To be used to print characters
-%s: To be used to print strings
-%d: To print integers of max and min size of an int type
-%i: To print integers of max and min size of an int type
-The _printf() function returns an integer representing the number of symbols
-printed not counting \\0 for the string.
+espacio de texto
 ```
 
 ### Pendiente de edición
