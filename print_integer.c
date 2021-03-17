@@ -14,7 +14,7 @@ int print_number(va_list integer)
 		write(1, "-", 1);
 		count++;
 	}
-	if (num > 10)
+	if (num >= 10)
 	{
 		while (TRUE)
 		{
