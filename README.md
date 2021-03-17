@@ -3,19 +3,20 @@
 ## printf
 
 ### _printf
- _espacio para descripción_
+ A simple re-creation of the printf function
 
 ```
-espacio de texto
+The _printf() function produces output according to a format which is described
+below. This function write its output to the stdout, the standard output stream.
 ```
 
-### Pendiente de edición
+### Usage.
 
-_Pendiente de edición_
+To use this function the #include "holberton.h" header is needed.
 
-* Pendiente de edición
-* Pendiente de edición
-* Pendiente de edición
+* %c: To be used to print characters
+* %s: To be used to print strings
+* %d: To print integers of max and min size of an int type
 
 |Pending edition	|Pending edition	|Pending edition	|Pending edition	|
 |-----------------------|-----------------------|-----------------------|-----------------------|
