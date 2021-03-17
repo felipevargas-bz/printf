@@ -2,27 +2,36 @@
 
 ## Titulo
 
-_Descripción_
+_Una simple recreación de la función printf
+Para utilizar esta función se necesita el encabezado #include "holberton.h".
+La función _printf () produce una salida de acuerdo con un formato que se describe
+debajo. Esta función escribe su salida en stdout, el flujo de salida estándar._
 
 ```
-Ejemplos
+Para utilizar _printf, debe utilizar los siguientes caracteres clave precedidos por el símbolo%.
+% c: se utiliza para imprimir caracteres
+% s: se utiliza para imprimir cadenas
+% d: para imprimir números enteros de tamaño máximo y mínimo de un tipo int
+% i: para imprimir números enteros de tamaño máximo y mínimo de un tipo int
+La función _printf () devuelve un número entero que representa el número de símbolos
+impreso sin contar \\ 0 para la cadena.
 ```
 
-### Especio para subtitulo
+### Pendiente de edición
 
-_texto de subtitulo_
+_Pendiente de edición_
 
-* Viñetas
-* Viñetas
-* Viñetas
+* Pendiente de edición
+* Pendiente de edición
+* Pendiente de edición
 
-|	titulo de tabla	|	titulo de tabla	|	titulo de tabla	|	titulo de tabla	|
+|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|
 |-----------------------|-----------------------|-----------------------|-----------------------|
-|contenido de tabla	|contenido de tabla	|contenido de tabla	|contenido de tabla	|
-|contenido de tabla	|contenido de tabla	|contenido de tabla	|contenido de tabla	|
-|contenido de tabla	|contenido de tabla	|contenido de tabla	|contenido de tabla	|
-|contenido de tabla	|contenido de tabla	|contenido de tabla	|contenido de tabla	|
-|contenido de tabla	|contenido de tabla	|contenido de tabla	|contenido de tabla	|
+|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|
+|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|
+|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|
+|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|
+|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|
 
 
 - Social media __Andres Vasquez__..
