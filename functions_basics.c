@@ -20,11 +20,21 @@ int print_char(va_list character)
 int print_string(va_list string)
 {
 	char *str = va_arg(string, char *);
-	int count = strlen(str);
 
-	write(1, str, count);
+	if (str && *str)
+	{
+		int count = strlen(str);
 
-	return (count);
+		write(1, str, count);
+
+		return (count);
+	}
+	else
+	{
+		write(1, "(null)", 6);
+
+		return (6);
+	}
 }
 /**
  * print_porcent - prints decimal numbers
