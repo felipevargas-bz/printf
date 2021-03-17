@@ -7,15 +7,15 @@
 #include <unistd.h>
 #include <string.h>
 #include <limits.h>
+
 #define TRUE 1
 
 /**
- * struct print - struct of function pointer
- * @ident: pointer variable
- * @pt_func: function pointer
- *
+ * struct print - struct of format to print.
+ * @ident: identifier.
+ * @pt_func: pointer to function.
+ * @count: pointer that counts printed characters.
  */
-
 typedef struct print
 {
 char *ident;
@@ -25,32 +25,26 @@ int (*pt_func)(va_list);
 /**
  * print_string - print a string.
  * @string: string to print.
- * Return: items of va_list.
+ * Return: size of the string.
  */
 int print_string(va_list string);
 /**
  * print_char - print a char.
  * @character: character to print.
- * Return: character of va_list.
+ * Return: size of the char
  */
 int print_char(va_list character);
 /**
- * _printf - print anything comes trough format.
+ * _printf - imprime lo que le venga XD.
  * @format: format of print.
  * Return: retractor variable int.
  */
 int _printf(const char *format, ...);
-/**
- * print_porcent - prints porcent function
- * @argument: name of the items passed
- * Return: size of string.
- */
-int print_porcent(va_list argument);
-/**
- * print_number - prints decimal numbers
- * @integer: name of the items in the va_list
- * Return: size of int
- */
-int print_number(va_list integer);
+
+int print_porcent(va_list argumentos);
+
 int (*get_format_function(const char *identifier))(va_list);
+
+int print_number(va_list integer);
+
 #endif /**HOLBERTON_H*/
