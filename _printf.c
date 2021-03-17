@@ -54,13 +54,6 @@ int _printf(const char *format, ...)
 			{
 				retractor += pt_func(argument_list);
 			}
-			else
-			{
-				write(1, format - 1, 1);
-				retractor++;
-				write(1, format, 1);
-				retractor++;
-			}
 			if (*format != '%')
 			{
 				format++;
