@@ -1,20 +1,20 @@
 <img src='https://github.com/felipevargas-bz/printf/blob/main/FLOWCHART.jpg' alt='Banner' width=100%>
 
-## Titulo
+## printf
 
-_Una simple recreación de la función printf
-Para utilizar esta función se necesita el encabezado #include "holberton.h".
-La función _printf () produce una salida de acuerdo con un formato que se describe
-debajo. Esta función escribe su salida en stdout, el flujo de salida estándar._
+### _printf
+ simple re-creation of the printf function
+To use this function the #include "holberton.h" header is needed.
+The _printf() function produces output according to a format which is described
 
 ```
-Para utilizar _printf, debe utilizar los siguientes caracteres clave precedidos por el símbolo%.
-% c: se utiliza para imprimir caracteres
-% s: se utiliza para imprimir cadenas
-% d: para imprimir números enteros de tamaño máximo y mínimo de un tipo int
-% i: para imprimir números enteros de tamaño máximo y mínimo de un tipo int
-La función _printf () devuelve un número entero que representa el número de símbolos
-impreso sin contar \\ 0 para la cadena.
+To use _printf you have to use the following key characters preceeded by % symbol.
+%c: To be used to print characters
+%s: To be used to print strings
+%d: To print integers of max and min size of an int type
+%i: To print integers of max and min size of an int type
+The _printf() function returns an integer representing the number of symbols
+printed not counting \\0 for the string.
 ```
 
 ### Pendiente de edición
@@ -25,13 +25,13 @@ _Pendiente de edición_
 * Pendiente de edición
 * Pendiente de edición
 
-|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|
+|Pending edition	|Pending edition	|Pending edition	|Pending edition	|
 |-----------------------|-----------------------|-----------------------|-----------------------|
-|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|
-|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|
-|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|
-|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|
-|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|Pendiente de edición	|
+|Pending edition	|Pending edition	|Pending edition	|Pending edition	|
+|Pending edition	|Pending edition	|Pending edition	|Pending edition	|
+|Pending edition	|Pending edition	|Pending edition	|Pending edition	|
+|Pending edition	|Pending edition	|Pending edition	|Pending edition	|
+|Pending edition	|Pending edition	|Pending edition	|Pending edition	|
 
 
 - Social media __Andres Vasquez__..
