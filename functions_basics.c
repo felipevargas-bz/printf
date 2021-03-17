@@ -8,9 +8,16 @@ int print_char(va_list character)
 {
 	int b = (char)va_arg(character, int);
 
+	if (b != 0)
+	{
 		write(1, &b, 1);
 
-	return (1);
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
 /**
  * print_string - print a string.
