@@ -3,20 +3,19 @@
 ## printf
 
 ### _printf
- A simple re-creation of the printf function
+ _espacio para descripción_
 
 ```
-The _printf() function produces output according to a format which is described
-below. This function write its output to the stdout, the standard output stream.
+espacio de texto
 ```
 
-### Usage.
+### Pendiente de edición
 
-To use this function the #include "holberton.h" header is needed.
+_Pendiente de edición_
 
-* %c: To be used to print characters
-* %s: To be used to print strings
-* %d: To print integers of max and min size of an int type
+* Pendiente de edición
+* Pendiente de edición
+* Pendiente de edición
 
 |Pending edition	|Pending edition	|Pending edition	|Pending edition	|
 |-----------------------|-----------------------|-----------------------|-----------------------|
@@ -25,6 +24,31 @@ To use this function the #include "holberton.h" header is needed.
 |Pending edition	|Pending edition	|Pending edition	|Pending edition	|
 |Pending edition	|Pending edition	|Pending edition	|Pending edition	|
 |Pending edition	|Pending edition	|Pending edition	|Pending edition	|
+
+
+## Titulo
+
+_Descripción_
+
+```
+Ejemplos
+```
+
+### Especio para subtitulo
+
+_texto de subtitulo_
+
+* Viñetas
+* Viñetas
+* Viñetas
+
+|	titulo de tabla	|	titulo de tabla	|	titulo de tabla	|	titulo de tabla	|
+|-----------------------|-----------------------|-----------------------|-----------------------|
+|contenido de tabla	|contenido de tabla	|contenido de tabla	|contenido de tabla	|
+|contenido de tabla	|contenido de tabla	|contenido de tabla	|contenido de tabla	|
+|contenido de tabla	|contenido de tabla	|contenido de tabla	|contenido de tabla	|
+|contenido de tabla	|contenido de tabla	|contenido de tabla	|contenido de tabla	|
+|contenido de tabla	|contenido de tabla	|contenido de tabla	|contenido de tabla	|
 
 
 - Social media __Andres Vasquez__..

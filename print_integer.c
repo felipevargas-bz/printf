@@ -1,47 +1,63 @@
 #include "holberton.h"
 /**
- * print_number - function to print numbers
+ * print_print_integer - function to print numbers
  * @integer: name of the items passed trough va_list
  * Return: int
  */
-int print_number(va_list integer)
-{	long a = 0, residuo = 1, divof10 = 10, solve = 10;
-	int count = 0, num = va_arg(integer, int);
+int print_integer(va_list integer)
+{
+	int num = va_arg(integer, int);
+	long digit = 1, powerful = 10, div = 10;
+	long count = 0, printed = 0;
+	unsigned int absolut = get_absolut(num);
 
 	if (num < 0)
-	{
-		num = -1 * num;
-		write(1, "-", 1);
+	{	write(1, "-", 1);
 		count++;
 	}
-	if (num >= 10)
+	if (absolut >= 10)
 	{
 		while (TRUE)
 		{
-			while ((num / solve) > 10)
-			{	divof10 *= 10;
-				solve = divof10;
+			while ((absolut / div) >= 10)
+			{	powerful *= 10;
+				div = powerful;
 			}
-			if (residuo == 1)
-			{	a = (num / divof10);
-				residuo = 0;
+			if (digit == 1)
+			{	printed = (absolut / powerful);
+				digit = 0;
 			}
 			else
-			{	a = (num / divof10);
-				a %= 10;
+			{	printed = (absolut / powerful);
+				printed %= 10;
 			}
-			a = a + '0';
-			write(1, &a, 1);
+			printed = printed + '0';
+			write(1, &printed, 1);
 			count++;
-			divof10 /= 10;
-			if (divof10 == 0)
-				break;
+			powerful /= 10;
+			if (powerful == 0)
+			break;
 		}
 	}
 	else
-	{	num = num + '0';
-		write(1, &num, 1);
+	{	absolut = absolut + '0';
+		write(1, &absolut, 1);
 		count++;
 	}
 	return (count);
+}
+/**
+ * get_absolut - absolut number
+ * @num: integer
+ * Return: return absolut number
+ */
+unsigned int get_absolut(int num)
+{
+	unsigned int absolut;
+
+	if (num < 0)
+		absolut = ((unsigned int)(num)) * -1;
+	else
+		absolut = ((unsigned int)(num));
+	return (absolut);
 }

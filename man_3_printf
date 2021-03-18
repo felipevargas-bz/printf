@@ -1,4 +1,4 @@
-.TH man 3 "16 march 2021" "0.01" "_printf man page"
+.TH man 3 "03 march 2021" "0.01" "_printf man page"
 .SH NAME
 .B _printf
 - A simple re-creation of the printf function

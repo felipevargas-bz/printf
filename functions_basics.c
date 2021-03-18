@@ -1,16 +1,16 @@
 #include "holberton.h"
 /**
  * print_char - print a char.
- * @character: character to print.
+ * @argument_list: character to print.
  * Return: size of the char.
  */
-int print_char(va_list character)
+int print_char(va_list argument_list)
 {
-	int b = (char)va_arg(character, int);
+	int character = (char)va_arg(argument_list, int);
 
-	if (b != 0)
+	if (character != 0)
 	{
-		write(1, &b, 1);
+		write(1, &character, 1);
 
 		return (1);
 	}
@@ -45,14 +45,13 @@ int print_string(va_list string)
 }
 /**
  * print_porcent - prints decimal numbers
- * @argument: name of the items in the va_list
+ * @argument_list: name of the items in the va_list
  * Return: size of int
  */
-int print_porcent(va_list argument)
+int print_porcent(va_list argument_list)
 {
-	(void)argument;
+	(void)argument_list;
 
 	write(1, "%", 1);
-
 	return (1);
 }

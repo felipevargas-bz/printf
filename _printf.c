@@ -15,8 +15,8 @@ int (*get_format_function(const char *identifier))(va_list)
 		{"c", print_char},
 		{"s", print_string},
 		{"%", print_porcent},
-		{"i", print_number},
-		{"d", print_number},
+		{"i", print_integer},
+		{"d", print_integer},
 		{NULL, NULL},
 	};
 
@@ -39,33 +39,38 @@ int (*get_format_function(const char *identifier))(va_list)
  * ... - all agurments passed trough variadic function
  * Return: number of caracters.
  */
+
 int _printf(const char *format, ...)
 {
 	int retractor = 0;
-	int (*pt_func)(va_list);
+	int (*func_ptr)(va_list);
+
 	va_list argument_list;
+
 	va_start(argument_list, format);
+
 	while (format && *format)
 	{
 		if (*format == '%')
 		{
-			pt_func = get_format_function(++format);
-			if (pt_func)
+			func_ptr = get_format_function(++format);
+			if (*func_ptr)
 			{
-				retractor += pt_func(argument_list);
+				retractor += func_ptr(argument_list);
 			}
 			if (*format != '%')
 			{
 				format++;
 			}
 		}
-		if (*format != '%')
+		if (*format != '\0')
 		{
 			write(1, format, 1);
 			retractor++;
+			format++;
 		}
-		format++;
 	}
 	va_end(argument_list);
+
 	return (retractor);
 }

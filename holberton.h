@@ -14,7 +14,6 @@
  * struct print - struct of format to print.
  * @ident: identifier.
  * @pt_func: pointer to function.
- * @count: pointer that counts printed characters.
  */
 typedef struct print
 {
@@ -30,10 +29,10 @@ int (*pt_func)(va_list);
 int print_string(va_list string);
 /**
  * print_char - print a char.
- * @character: character to print.
+ * @argument_list: character to print.
  * Return: size of the char
  */
-int print_char(va_list character);
+int print_char(va_list argument_list);
 /**
  * _printf - imprime lo que le venga XD.
  * @format: format of print.
@@ -41,10 +40,12 @@ int print_char(va_list character);
  */
 int _printf(const char *format, ...);
 
-int print_porcent(va_list argumentos);
+int print_porcent(va_list argument_list);
 
 int (*get_format_function(const char *identifier))(va_list);
 
-int print_number(va_list integer);
+int print_integer(va_list integer);
+
+unsigned int get_absolut(int num);
 
 #endif /**HOLBERTON_H*/
