@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print_print_integer - function to print numbers
+ * print_integer - function to print numbers
  * @integer: name of the items passed trough va_list
  * Return: int
  */
