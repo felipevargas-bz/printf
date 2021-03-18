@@ -6,9 +6,14 @@
  */
 int print_char(va_list argument_list)
 {
-	int character = (char)va_arg(argument_list, int);
+	int *character = va_arg(argument_list, int *);
 
-	if (character != '\0')
+	if (character == NULL)
+	{
+		return (1);
+	}
+
+	if (character != NULL)
 	{
 		write(1, &character, 1);
 
