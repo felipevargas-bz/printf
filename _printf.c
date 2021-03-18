@@ -65,7 +65,7 @@ int _printf(const char *format, ...)
 				write(1, format, 1);
 				retractor++;
 			}
-			if (*format != '%')
+			if (*format != '\0')
 			{
 				format++;
 			}
