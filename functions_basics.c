@@ -53,5 +53,6 @@ int print_porcent(va_list argument_list)
 	(void)argument_list;
 
 	write(1, "%", 1);
+
 	return (1);
 }

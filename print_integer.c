@@ -6,12 +6,11 @@
  */
 int print_integer(va_list integer)
 {
-	int num = va_arg(integer, int);
-	long digit = 1, powerful = 10, div = 10;
-	long count = 0, printed = 0;
-	unsigned int absolut = get_absolut(num);
+	int number = va_arg(integer, int);
+	long digit = 1, powerful = 10, div = 10, count = 0, printed = 0;
+	unsigned int absolut = get_absolut(number);
 
-	if (num < 0)
+	if (number < 0)
 	{	write(1, "-", 1);
 		count++;
 	}
@@ -48,16 +47,16 @@ int print_integer(va_list integer)
 }
 /**
  * get_absolut - absolut number
- * @num: integer
+ * @number: integer
  * Return: return absolut number
  */
-unsigned int get_absolut(int num)
+unsigned int get_absolut(int number)
 {
 	unsigned int absolut;
 
-	if (num < 0)
-		absolut = ((unsigned int)(num)) * -1;
+	if (number < 0)
+		absolut = ((unsigned int)(number)) * -1;
 	else
-		absolut = ((unsigned int)(num));
+		absolut = ((unsigned int)(number));
 	return (absolut);
 }
