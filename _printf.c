@@ -31,7 +31,6 @@ int (*get_format_function(const char *identifier))(va_list)
 
 	return (NULL);
 }
-
 /**
  * _printf - principal function of printf
  *
@@ -39,11 +38,9 @@ int (*get_format_function(const char *identifier))(va_list)
  * ... - all agurments passed trough variadic function
  * Return: number of caracters.
  */
-
 int _printf(const char *format, ...)
 {
-	int retractor = 0;
-	int (*func_ptr)(va_list);
+	int retractor = 0, i = 0, (*func_ptr)(va_list);
 
 	va_list argument_list;
 
@@ -60,7 +57,11 @@ int _printf(const char *format, ...)
 			if (func_ptr)
 				retractor += func_ptr(argument_list);
 			else
-			{	write(1, format - 1, 1);
+			{
+				if (format[i - 1] == '%' && *format == '\0')
+					return (-1);
+
+				write(1, format - 1, 1);
 				retractor++;
 				write(1, format, 1);
 				retractor++;
@@ -71,13 +72,11 @@ int _printf(const char *format, ...)
 			}
 		}
 		if (*format != '\0' && *format != '%')
-		{
-			write(1, format, 1);
+		{	write(1, format, 1);
 			retractor++;
 			format++;
 		}
 	}
 	va_end(argument_list);
-
 	return (retractor);
 }
