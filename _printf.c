@@ -58,6 +58,13 @@ int _printf(const char *format, ...)
 			{
 				retractor += func_ptr(argument_list);
 			}
+			else
+			{
+				write(1, format - 1, 1);
+				retractor++;
+				write(1, format, 1);
+				retractor++;
+			}
 			if (*format != '\0')
 			{
 				format++;
