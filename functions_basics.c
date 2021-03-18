@@ -36,11 +36,15 @@ int print_string(va_list string)
 
 		return (count);
 	}
-	else
+	if (str == NULL)
 	{
 		write(1, "(null)", 6);
 
 		return (6);
+	}
+	else
+	{
+		return (0);
 	}
 }
 /**

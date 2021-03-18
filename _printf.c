@@ -65,12 +65,12 @@ int _printf(const char *format, ...)
 				write(1, format, 1);
 				retractor++;
 			}
-			if (*format != '\0')
+			if (*format != '%')
 			{
 				format++;
 			}
 		}
-		if (*format != '\0')
+		if (*format != '\0' && *format != '%')
 		{
 			write(1, format, 1);
 			retractor++;
