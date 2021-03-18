@@ -8,7 +8,7 @@ int print_char(va_list argument_list)
 {
 	int character = (char)va_arg(argument_list, int);
 
-	if (character != 0)
+	if (character != '\0')
 	{
 		write(1, &character, 1);
 
