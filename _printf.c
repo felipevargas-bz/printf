@@ -49,18 +49,18 @@ int _printf(const char *format, ...)
 
 	va_start(argument_list, format);
 
+	if (format == NULL)
+		return (-1);
+
 	while (format && *format)
 	{
 		if (*format == '%')
 		{
 			func_ptr = get_format_function(++format);
 			if (func_ptr)
-			{
 				retractor += func_ptr(argument_list);
-			}
 			else
-			{
-				write(1, format - 1, 1);
+			{	write(1, format - 1, 1);
 				retractor++;
 				write(1, format, 1);
 				retractor++;
