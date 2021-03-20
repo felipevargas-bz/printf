@@ -2,7 +2,6 @@
 
 /**
  * get_format_function - Get the format function object
- *
  * @identifier: identify the caracter format
  * Return: NULL.
  */
