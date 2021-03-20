@@ -12,7 +12,6 @@ int print_char(va_list argument_list)
 	{
 		return (1);
 	}
-
 	if (character != 0)
 	{
 		write(1, &character, 1);
