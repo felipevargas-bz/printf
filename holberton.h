@@ -20,7 +20,6 @@ typedef struct print
 char *ident;
 int (*pt_func)(va_list);
 } for_mt;
-
 /**
  * print_string - print a string.
  * @string: string to print.
