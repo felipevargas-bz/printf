@@ -47,5 +47,4 @@ int (*get_format_function(const char *identifier))(va_list);
 int print_integer(va_list integer);
 
 unsigned int get_absolut(int num);
-
 #endif /**HOLBERTON_H*/
