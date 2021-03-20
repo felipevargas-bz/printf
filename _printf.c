@@ -6,7 +6,6 @@
  * @identifier: identify the caracter format
  * Return: NULL.
  */
-
 int (*get_format_function(const char *identifier))(va_list)
 {
 	int i = 0;
