@@ -9,7 +9,6 @@
 #include <limits.h>
 
 #define TRUE 1
-
 /**
  * struct print - struct of format to print.
  * @ident: identifier.
