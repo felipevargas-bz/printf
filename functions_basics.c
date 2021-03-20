@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print_char - print a char.
+ * print_char - print a char
  * @argument_list: character to print.
  * Return: size of the char
  */
