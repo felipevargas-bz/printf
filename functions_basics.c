@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * print_char - print a char
+ * print_char - print a char.
  * @argument_list: character to print.
- * Return: size of the char
+ * Return: size of the char.
  */
 int print_char(va_list argument_list)
 {
