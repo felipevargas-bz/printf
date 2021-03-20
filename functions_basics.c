@@ -26,7 +26,7 @@ int print_char(va_list argument_list)
 /**
  * print_string - print a string.
  * @string: string to print.
- * Return: size of string
+ * Return: size of string.
  */
 int print_string(va_list string)
 {
