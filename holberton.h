@@ -39,7 +39,6 @@ int print_char(va_list argument_list);
  * Return: retractor variable int.
  */
 int _printf(const char *format, ...);
-
 int print_porcent(va_list argument_list);
 int (*get_format_function(const char *identifier))(va_list);
 int print_integer(va_list integer);
