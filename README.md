@@ -1,4 +1,3 @@
-<img src='https://github.com/felipevargas-bz/printf/blob/main/FLOWCHART.jpg' alt='Banner' width=100%>
 
 # _printf :page_facing_up:
 
